@@ -53,7 +53,7 @@ header{
     padding-left: 10px;
     margin-top: 0;
     list-style: none;
-    z-index: 3;
+    z-index: 30000;
     box-shadow: 0px 0px 10px 10px black;
 }
 #header-container{
