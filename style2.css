@@ -184,8 +184,7 @@ h4{
 	overflow: scroll;
 }
 .similar-artists-container::-webkit-scrollbar {
-display: none;
-
+	display: none;
 }
 #similar-artists-container1{
 	margin-top: 86px;
