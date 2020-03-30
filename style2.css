@@ -8,7 +8,6 @@
 	flex-direction: row;
 	vertical-align: middle;
 }
-
 .artist-image img{
 	width:257%;
 	height: 440px;
@@ -57,11 +56,77 @@ h5{
     border-style: none;
     background-image: linear-gradient(to right,blue,darkviolet);
 }
-
-
 h4{
 	color: white;
 }
+
+/*Artist-playlist*/
+.playlist-container{
+	margin-top: 33px;
+	width: 95%;
+	height: 591px;
+	/*background-color: cyan;*/
+	overflow: scroll;
+	margin
+}
+.playlist-container::-webkit-scrollbar {
+	display: none;
+}
+.playlist-song-content{
+	background-color: #221c2a;
+	width: 98%;
+	height: 75px;
+	/*border: 2px solid black;*/
+	justify-content: space-between;
+	transition: transform .5s;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.playlist-song-content:hover{
+	transform: scale(1.01);
+	box-shadow: 0px 0px 5px 5px black;
+}
+#num-img-info{
+	width:23%;
+}
+
+#num-img-info img{
+	margin-top:2px;
+}
+.like-plus{
+	width: 7%;
+	margin-right: 50px;
+	justify-content: space-around;
+	cursor: pointer;
+}
+.time{
+	width: 65%;
+}
+
+.time p{
+	color:white;
+	display: none;
+	margin-right: 100px;
+	text-align: center;
+}
+.time:hover p{
+	display: block;
+}
+
+.m-top{
+	margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
