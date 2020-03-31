@@ -453,7 +453,7 @@ a.see-all{
 
 /*PlayMusic-System*/
 .playmusic-container{
-	margin-top: 645px;
+	margin-top: 635px;
 	width: 100%;
 	height: 90px;
 	position: fixed;
@@ -515,6 +515,7 @@ a.see-all{
 #dot{
 	margin:0px;
 	margin-top: 24px;
+	cursor: pointer;
 }
 .expand{
 	margin-left: 20px;
