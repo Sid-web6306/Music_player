@@ -1,6 +1,9 @@
 body{
 	background-color:#021127;
 }
+* {
+	box-sizing: border-box;
+  }
 header{
 	margin-top: 0px;
 	/*border-top: 2px solid white;*/
@@ -160,13 +163,6 @@ img{
 }
 
 
-
-
-
-
-
-
-
 /*Section1*/
 .section-1-container
 {
@@ -189,6 +185,7 @@ img{
 	75%{ background-image: url('https://img.wynk.in/unsafe/720x251/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/Heal-The-World-720X251.png'); }
 	100%{ background-image: url('https://img.wynk.in/unsafe/720x251/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/lazyswagghn.png'); }
 }
+
 
 
 .main-container{
@@ -453,7 +450,7 @@ a.see-all{
 
 /*PlayMusic-System*/
 .playmusic-container{
-	margin-top: 615px;
+	margin-top: 550px;
 	width: 100%;
 	height: 90px;
 	position: fixed;
@@ -476,8 +473,8 @@ a.see-all{
 	border-bottom: 2px solid green;
 }
 .img-info img{
-	width: 50px;
-	height: 50px;
+	width: 100px;
+	height: 100px;
 	padding: 19px;
 	border-radius: 30px;
 }
@@ -526,4 +523,156 @@ a.see-all{
 }
 .white:hover{
 	color: black;
+}
+
+
+/* Media Queries for .navbar */
+
+@media only screen and (max-width: 600px) {
+	.navbar{
+		display: none;
+	}
+	.nav_for_sm{
+		width: 100%;
+		height: 70px;
+
+		background-color: black;
+		z-index: 200;
+		position: fixed;
+		top:0;
+		left:0;
+	}
+	.logo-name{
+		display: flex;
+		justify-content: space-between;
+	}
+	.img-name{
+		display:flex;
+	}
+	h5{
+		color:white;
+	}
+	.box-white{
+		width: 37px;
+		border:2px solid white;
+		margin-top: 3px;
+		margin-bottom: 7px;
+	}
+	.dropbtn {
+		background-color: black;
+		color: white;
+		padding: 16px;
+		font-size: 16px;
+		border: none;
+		cursor: pointer;
+	  }
+	  
+	  .dropdown {
+		position: relative;
+		display: inline-block;
+	  }
+	  
+	  .dropdown-content {
+		display: none;
+		position: absolute;
+		right: 0;
+		background-color: #f9f9f9;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+	  }
+	  
+	  .dropdown-content a {
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+	  }
+	  #ninja-name{
+		  font-weight:bolder;
+	  }
+	  
+	  .dropdown-content a:hover {background-color: skyblue;}
+	  .dropdown:hover .dropdown-content {display: block;}
+	  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+	  .search-bar input{
+		width: 330px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	.search{
+		height: 40px;
+		/*border: 1px solid red;*/
+		background-color: #fff;
+		padding-left: 30px;
+		margin-right: 100px;
+		margin-top: 15px;
+		padding-right: 20px;
+		border-radius: 5px;
+		font-size: 20px;
+	}
+	.search-btn{
+		left: 10px;
+		top: 27px;
+		color: black;
+		cursor: pointer;
+	}
+	.section-1-container{
+		top: 17%;
+		width: 102vw;
+		box-shadow: none;
+		transform: translate(-50%,-200%);
+		height: 300px;
+
+	}
+	.main-container{
+		display: block;
+	}
+	.main-container1{
+		width: 100vw;
+		margin-left:0px;
+	}
+	#lat-rel-head{
+		margin-top: 400px;
+	}
+	#pert-content-image{
+		width: 99%;
+		margin:0;
+	}
+	.latest-release{
+		margin-right: 0px;;
+		overflow: scroll;
+		width: 100vw;
+	}
+	.latest-release::-webkit-scrollbar {
+		display: none;
+	}
+	.latest-release-content{
+		display: inline;
+	}
+
+	.latest-hindi-heading{
+		width: 99%;
+		margin-left: 0;
+	}
+	#icon{
+		display: none;
+	}
+	.album-song{
+		width: 100vw;
+		margin: 0;
+	}
+	#queue-heading{
+		margin-left:0;
+		margin-top: 30px;
+		width: 99%;
+	}
+	.main-container2{
+		width: 102%;
+		margin-top: 110px;
+		box-shadow: 0px 0px 5px 5px black;
+	}
+	
 }

@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+  }
+
 /*Artists-Full-Information*/
 
 .artist-fullinfo{
@@ -71,7 +75,6 @@ h4{
 	height: 591px;
 	/*background-color: cyan;*/
 	overflow: scroll;
-	margin
 }
 .playlist-container::-webkit-scrollbar {
 	display: none;
