@@ -500,7 +500,7 @@ a.see-all{
 	width: 100%;
 	height: 90px;
 	position: fixed;
-	top: 621px;
+	top: 88vh;
 	z-index: 30000;
 	/*background-color: #363535;*/
 	justify-content: center;
@@ -575,7 +575,7 @@ a.see-all{
 	width: 30%;
 	height: 100%;
 	margin-top: 20px;
-	margin-left: 225px;
+	margin-left: 200px;
 }
 
 
@@ -810,7 +810,7 @@ a.see-all{
 	  .dropdown:hover .dropdown-content {display: block;}
 
 	  .search-bar input{
-		width: 330px;
+		width: 290px;
 		display: flex;
 		flex-wrap: wrap;
 	}
@@ -913,10 +913,4 @@ a.see-all{
 	.play-instructions{
 		display:none;
 	}
-}
-@media only screen and (min-height: 800px){
-	.playmusic-container{
-		top: 746px;
-	}
-
 }
