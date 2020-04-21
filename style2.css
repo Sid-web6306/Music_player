@@ -22,7 +22,7 @@
 .artist-info{
 	width: 55%;
 	height: 440px;
-	margin-left: 28%;
+	margin-left: 33%;
 	/*border: 2px dashed black;*/
 }
 .name-follower{
@@ -94,7 +94,7 @@ h4{
 	box-shadow: 0px 0px 5px 5px black;
 }
 #num-img-info{
-	width:23%;
+	width:50%;
 }
 
 #num-img-info img{
@@ -123,36 +123,6 @@ h4{
 .m-top{
 	margin-top: 5px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*Similar-artist-heading*/
@@ -194,4 +164,57 @@ h4{
 }
 #similar-artists-container2{
 	height: 500px;
+}
+
+
+@media only screen and (max-width: 1199px){
+	.container{
+		margin-top: 108px;
+		width: 26vw;
+	}
+	.similar-artists-heading{
+		 width: 27.28vw;
+	}
+}
+
+@media only screen and (max-width: 990px){
+	.main-container{
+		margin-top: 160px;
+	}
+	.container{
+		display: none;
+	}
+}
+@media only screen and (max-width: 768px){
+	.main-container{
+		margin-top: -26px;
+	}
+}
+
+@media only screen and (max-width:600px){
+	.artist-fullinfo{
+		flex-direction: column;
+	}
+	.artist-image img{
+		width: 100%;
+	}
+	.artist-info{
+		margin-left: 0;
+		width: 100%;
+	}
+	.artist-play{
+		justify-content: flex-start;
+	}
+	.artist-play h4{
+		margin-left: 80px;
+	}
+	.playlist-container{
+		margin-top: 400px;
+	}
+	#num-img-info{
+		width: 70%;
+	}
+	.like-plus{
+		width: 15%;
+	}
 }
