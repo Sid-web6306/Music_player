@@ -312,6 +312,9 @@ a.see-all{
 	margin-left: 5px;
 }
 /*LatestEnglish-songs*/
+#latest-english-container{
+	margin-bottom: 130px;
+}
 #latest-english-heading{
 	margin-top: 50px;
 }
@@ -720,17 +723,9 @@ a.see-all{
 		width: 100vw;
 		margin: 0;
 	}
-	#queue-heading{
-		margin-left:0px;
-		margin-top: 20px;
-		margin-bottom:0px;
-		width: 99%;
-	}
+	#queue-heading,
 	.main-container2{
-		width: 102%;
-		margin-top: 93px;
-		margin-left:0px;
-		box-shadow: 0px 0px 5px 5px black;
+		display:none;
 	}
 	
 }
@@ -850,14 +845,14 @@ a.see-all{
 	#icon{
 		display: none;
 	}
-	.main-container2{
-		margin-top: 110px;
-	}
 	.playmusic-container{
 		left:0;
 	}
 	.playmusic-content{
 		width: 100%;
+	}
+	.play-instructions{
+		width: 40%;
 	}
 }
 
@@ -899,13 +894,7 @@ a.see-all{
 	#icon{
 		display: none;
 	}
-	#queue-heading{
-		margin-top: 30px;
-		width: 99%;
-	}
-	.main-container2{
-		margin-top: 110px;
-	}
+	
 }
 @media only screen and (min-width: 500px){
 	.play-pause{
@@ -915,5 +904,11 @@ a.see-all{
 @media only screen and (max-width: 500px){
 	.play-instructions{
 		display:none;
+	}
+	.playmusic-container{
+		top: 87.8vh;
+	}
+	.circle{
+		height: 8px;
 	}
 }
