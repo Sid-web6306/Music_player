@@ -59,7 +59,13 @@ h5{
     padding: 15px;
     width: 140px;
     border-style: none;
-    background-image: linear-gradient(to right,blue,darkviolet);
+	background-image: linear-gradient(to right,blue,darkviolet);
+	transition: all 0.2s ease-in-out;
+	font-size: 14px;
+}
+.play:active{
+	transform: scale(0.9);
+	font-size: 12px;
 }
 button{
 	color: white;
@@ -92,6 +98,9 @@ h4{
 .playlist-song-content:hover{
 	transform: scale(1.01);
 	box-shadow: 0px 0px 5px 5px black;
+}
+.playlist-song-content:active{
+	transform: scale(0.8);
 }
 #num-img-info{
 	width:50%;

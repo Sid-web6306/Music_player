@@ -224,6 +224,7 @@ img{
 	box-shadow: 1px 2px 10px 5px white;
 	animation: slider 30s infinite linear;
 	cursor: pointer;
+	z-index: 10;
 }
 @keyframes slider{
 	0%{ background-image: url('https://img.wynk.in/unsafe/720x251/filters:no_upscale():format(webp)/https://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/Work-From-Home--chillout-Mix-720x251.png'); }
@@ -292,6 +293,7 @@ a.see-all{
 
 .album-image{
 	margin: 5px;
+	position : relative;
 	/*background-image: url('https://img.wynk.in/unsafe/150x150/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_universalmusic/music/1584319317/srch_universalmusic_00602508906268-INUM72000010.jpg');*/
 }
 
@@ -381,10 +383,21 @@ a.see-all{
   top: 50%;
   color: white;
   left: 50%;
-  font-size: 500;
+  font-size: 20px;
   transform: translate(-50%, -100%);
   z-index: 10;
   opacity: 0.8;
+}
+.size{
+	top: 60%;
+	opacity:0;
+	transition: all 0.2s ease-in;
+}
+.size:hover{
+	opacity: 1;
+}
+.album-image:hover img{
+	opacity: 0.7;
 }
 
 
@@ -469,11 +482,18 @@ a.see-all{
 	transition: transform .5s;
 	cursor: pointer;
 }
+
+
 .queue-content:hover{
 	transform: scale(1.01);
 	box-shadow: 0px 0px 5px 5px black;
-
 }
+.queue-content:active{
+	transform: scale(0.8);
+	box-shadow: none;
+}
+
+
 .num-img-name{
 	width: 60%;
 	height: auto;
@@ -597,9 +617,12 @@ a.see-all{
 		width: 27vw;
 	}
 	#queue-heading{
-		margin-top: 80px;
+		margin-top: 61px;
 		margin-left: 71vw;
 		width: 26.28vw;
+	}
+	.dropdown{
+		display: none;
 	}
 
 }
